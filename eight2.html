@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowspan and Colspan in HTML tables</title>
+    <style>
+        table, th, td {
+            border: 2px solid white;
+            border-collapse: collapse;
+        }
+        table {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            color: blue;
+            background-color: aquamarine;
+            color: white;
+        }
+        td:hover {
+            background-color: rgba(255, 228, 196, 0.389);
+        }
+    </style>
+</head>
+<body>
+    <table border="20" cellpadding="15" cellspacing="10" width="500" height="300" bordercolor="green">
+    <thead>
+        <th>Name</th>
+        <th colspan="2">Marks</th>
+        <th>Total Marks</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Rehman</td>
+            <td>Sub 1</td>
+            <td>95</td>
+            <td rowspan="2">195</td>
+        </tr>
+        <tr>
+            <td>Sub 2</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Asif</td>
+            <td>Sub 1</td>
+            <td>95</td>
+            <td rowspan="2">192</td>
+        </tr>
+        <tr>
+            <td>Sub 2</td>
+            <td>98</td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>
